@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+	"name": "JavaScript Toggler",
+	"short_name": "JavaScript Toggler",
+	"version": "0.1",
+	"description": "Toggles JavaScript on/off",
+	"homepage_url": "http://www.javascript.com",
+	"background": {
+		"persistent": false,
+		"page": "background.html"
+	},
+	"icons": { 
+		"16": "images/icon.png",
+		"19": "images/icon19.png",
+		"38": "images/icon38.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	}, 
+	"permissions": [
+		"https://ssl.google-analytics.com/*",
+		"tabs"
+	],
+	"browser_action": {
+		"default_icon": { 
+			"19": "images/icon19.png",
+			"38": "images/icon38.png"
+		 }, 
+		"default_title": "Cache Checker"
+	},
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
